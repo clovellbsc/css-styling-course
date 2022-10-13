@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; /* sets to this automatically but don't use 100vw as does not take into account scroll bar on the right so will cause overflow */
+  min-height: 100vh;
+}
+
+header {
+  width: 50%;
+}
+
+h1 {
+  border: 2px dashed red;
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+main {
+  font-size: 2rem;
+  background-color: skyblue;
+  width: vw;
+}
+
+p {
+  font-size: 2rem;
+  width: 40ch;
+}
