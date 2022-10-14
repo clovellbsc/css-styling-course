@@ -104,8 +104,18 @@ footer {
   font-size: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   color: white;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
 }
 
 .social {
@@ -117,4 +127,16 @@ a:visited {
   top: 30%;
   left: 0;
   z-index: 1;
+}
+
+.one:hover {
+  color: blue;
+}
+
+.two:hover {
+  color: red;
+}
+
+.three:hover {
+  color: green;
 }
