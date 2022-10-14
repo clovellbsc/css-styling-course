@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  align-content: center;
+  gap: 1rem;
+}
+
+.box {
+  /* min-width: 100px; */
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100px; /* kind of min width */
+  /* flex-grow: 1; proportion of how much the box expands when screen gets bigger */
+  flex-shrink: 1; /* opposite of above */
+  /* flex: 1 1 250px; grow shrink basis */
+}
+
+.box:nth-child(2) {
+  /* flex-grow: 2; */
+  flex-shrink: 2;
+  order: 3;
+}
